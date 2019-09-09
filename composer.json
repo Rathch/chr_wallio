@@ -1,0 +1,41 @@
+{
+    "name": "chr\/wallio",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [
+        {
+            "name": "Christian Rath",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3\/cms-core": "^9.5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "CHR\\ChrWallio\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CHR\\ChrWallio\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "chr_wallio": "self.version",
+        "typo3-ter\/chr_wallio": "self.version"
+    },
+    "version": "0.0.1",
+    "scripts": {
+        "post-autoload-dump": [
+            "mkdir -p ..\/default.instance\/typo3conf\/ext\/",
+            "[ -L ..\/default.instance\/typo3conf\/ext\/chr_wallio ] || ln -snvf ..\/..\/..\/dir-project ..\/default.instance\/typo3conf\/ext\/chr_wallio"
+        ]
+    },
+    "extra": {
+        "typo3\/cms": {
+            "cms-package-dir": "{$vendor-dir}\/typo3\/cms",
+            "web-dir": "..\/default.instance"
+        }
+    }
+}
