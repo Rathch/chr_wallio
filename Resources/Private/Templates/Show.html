@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+    <div class="ce-wallio-modul">
+        <div class="container">
+            <div class="row justify-content-center">
+                <f:if condition="{data.wall_image}">
+                    <div class="col-12">
+                        <div class="wall_image row">
+                            <div class="wall_image-icon col-3">
+                                <f:image src="{data.wall_image}"  treatIdAsReference="1" />
+                            </div>
+                            <div class="wall_image-text col-9">
+                                <f:format.html parseFuncTSPath="lib.parseFunc">{data.wall_social_text}</f:format.html>
+                            </div>
+                        </div>
+                    </div>
+                </f:if>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8 col-xl-6 text-center" id="wallio-gdpr-notice">
+                    <div class="text">
+                        <f:format.html parseFuncTSPath="lib.parseFunc">{data.wall_header_notice}</f:format.html>
+                    </div>
+                    <a href="javascript:addWallio('{data.wall_url}')" class="btn btn-primary {data.wall_url}" role="button"><span class="decor"></span><span class="title">{data.wall_header_button_lable}</span></a>
+                </div>
+                <div class="col-12" id="wallio-container"></div>
+            </div>
+
+        </div>
+    </div>
+</html>
