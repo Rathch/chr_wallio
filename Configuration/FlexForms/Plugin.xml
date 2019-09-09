@@ -1,0 +1,135 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <type>array</type>
+                <el>
+                    <wall_header>
+                        <TCEforms>
+                            <label>Header</label>
+                            <config>
+                                <type>input</type>
+                                <size>50</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </wall_header>
+                    <wall_url>
+                        <TCEforms>
+                            <label>Walls.io URL</label>
+                            <config>
+                                <type>input</type>
+                                <size>50</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </wall_url>
+                    <wall_social_text>
+                        <label>Social Text</label>
+                        <config>
+                            <type>text</type>
+                            <cols>80</cols>
+                            <rows>3</rows>
+                        </config>
+                        <defaultExtras>richtext[*]:rte_transform[mode=ts_css]</defaultExtras>
+                    </wall_social_text>
+                    <wall_header_notice>
+                        <label>GDPR Notice</label>
+                        <config>
+                            <type>text</type>
+                            <cols>80</cols>
+                            <rows>3</rows>
+                        </config>
+                        <defaultExtras>richtext[*]:rte_transform[mode=ts_css]</defaultExtras>
+                    </wall_header_notice>
+                    <wall_header_button_lable>
+                        <TCEforms>
+                            <label>GDPR Button Label</label>
+                            <config>
+                                <type>input</type>
+                                <size>20</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </wall_header_button_lable>
+                    <wall_image>
+                        <TCEforms>
+                            <label>Headline Image</label>
+                            <config>
+                                <type>inline</type>
+                                <maxitems>1</maxitems>
+                                <foreign_table>sys_file_reference</foreign_table>
+                                <foreign_table_field>tablenames</foreign_table_field>
+                                <foreign_label>uid_local</foreign_label>
+                                <foreign_sortby>sorting_foreign</foreign_sortby>
+                                <foreign_selector>uid_local</foreign_selector>
+                                <foreign_selector_fieldTcaOverride type="array">
+                                    <config>
+                                        <appearance>
+                                            <elementBrowserType>file</elementBrowserType>
+                                            <elementBrowserAllowed>jpg,png,svg</elementBrowserAllowed>
+                                        </appearance>
+                                    </config>
+                                </foreign_selector_fieldTcaOverride>
+                                <foreign_match_fields type="array">
+                                    <fieldname>share_statement_header_background_image</fieldname>
+                                </foreign_match_fields>
+                                <appearance type="array">
+                                    <newRecordLinkAddTitle>1</newRecordLinkAddTitle>
+                                    <headerThumbnail>
+                                        <field>uid_local</field>
+                                        <height>64</height>
+                                        <width>64</width>
+                                    </headerThumbnail>
+                                </appearance>
+                                <overrideChildTca>
+                                    <types type="array">
+                                        <numIndex index="0" type="array">
+                                            <showitem>
+                                                --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+                                                --palette--;;filePalette
+                                            </showitem>
+                                        </numIndex>
+                                        <numIndex index="1" type="array">
+                                            <showitem>
+                                                --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+                                                --palette--;;filePalette
+                                            </showitem>
+                                        </numIndex>
+                                        <numIndex index="2" type="array">
+                                            <showitem>
+                                                --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+                                                --palette--;;filePalette
+                                            </showitem>
+                                        </numIndex>
+                                        <numIndex index="3" type="array">
+                                            <showitem>
+                                                --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.audioOverlayPalette;audioOverlayPalette,
+                                                --palette--;;filePalette
+                                            </showitem>
+                                        </numIndex>
+                                        <numIndex index="4" type="array">
+                                            <showitem>
+                                                --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.videoOverlayPalette;videoOverlayPalette,
+                                                --palette--;;filePalette
+                                            </showitem>
+                                        </numIndex>
+                                        <numIndex index="5" type="array">
+                                            <showitem>
+                                                --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+                                                --palette--;;filePalette
+                                            </showitem>
+                                        </numIndex>
+                                    </types>
+                                </overrideChildTca>
+                            </config>
+                        </TCEforms>
+                    </wall_image>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

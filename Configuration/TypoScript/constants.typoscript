@@ -1,0 +1,8 @@
+# cat=ppk_tx_chrwallio/file; type=string; label=Path to template root (FE)
+plugin.tx_chrwallio.view.templateRootPath = EXT:tx_chrwallio/Resources/Private/Templates/
+
+# cat=ppk_tx_chrwallio/file; type=string; label=Path to template partials (FE)
+plugin.tx_chrwallio.view.partialRootPath = EXT:tx_chrwallio/Resources/Private/Partials/
+
+# cat=ppk_tx_chrwallio/file; type=string; label=Path to template layouts (FE)
+plugin.tx_chrwallio.view.layoutRootPath = EXT:tx_chrwallio/Resources/Private/Layouts/

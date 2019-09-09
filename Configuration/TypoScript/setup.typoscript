@@ -1,0 +1,40 @@
+plugin.tx_chrwallio {
+    layoutRootPaths.0 = EXT:tx_chrwallio/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_chrwallio.view.layoutRootPath}
+    partialRootPaths.0 = EXT:tx_chrwallio/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_chrwallio.view.partialRootPath}
+    templateRootPaths.0 = EXT:tx_chrwallio/Resources/Private/Templates/
+    templateRootPaths.10 = {$plugin.tx_chrwallio.view.templateRootPath}
+
+}
+
+page.includeCSS {
+    wallio = EXT:chr_wallio/Resources/Public/css/main.css
+}
+
+page.includeJS {
+    wallio = EXT:chr_wallio/Resources/Public/js/main.js
+    wallio.type = application/x-javascript
+
+}
+
+tt_content {
+    chrwallio_wall =< lib.contentElement
+    chrwallio_wall {
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = assets
+            }
+            20 = CHR\ChrWallio\DataProcessing\FlexFormProcessor
+            20 {
+                fieldName = pi_flexform
+            }
+            30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            30 {
+                references.fieldName = image
+                as = images
+            }
+        }
+    }
+}
