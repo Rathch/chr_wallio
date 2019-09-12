@@ -1,5 +1,5 @@
 <?php
-namespace CHR\ChrWallio\Controller;
+namespace CHR\ChrWallsio\Controller;
 
 
 
