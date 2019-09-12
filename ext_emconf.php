@@ -11,8 +11,8 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'chr_wallio',
-    'description' => 'integrates wall.io',
+    'title' => 'chr_wallsio',
+    'description' => 'integrates walls.io',
     'category' => 'plugin',
     'author' => 'Christian Rath',
     'author_email' => 'christian.rath@publicispixelpark.de',
