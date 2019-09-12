@@ -1,5 +1,5 @@
 {
-    "name": "chr\/wallio",
+    "name": "chr\/wallsio",
     "type": "typo3-cms-extension",
     "description": "",
     "authors": [
@@ -13,23 +13,23 @@
     },
     "autoload": {
         "psr-4": {
-            "CHR\\ChrWallio\\": "Classes"
+            "CHR\\ChrWallsio\\": "Classes"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "CHR\\ChrWallio\\Tests\\": "Tests"
+            "CHR\\ChrWallsio\\Tests\\": "Tests"
         }
     },
     "replace": {
         "chr_wallio": "self.version",
-        "typo3-ter\/chr_wallio": "self.version"
+        "typo3-ter\/chr_wallsio": "self.version"
     },
     "version": "0.0.1",
     "scripts": {
         "post-autoload-dump": [
             "mkdir -p ..\/default.instance\/typo3conf\/ext\/",
-            "[ -L ..\/default.instance\/typo3conf\/ext\/chr_wallio ] || ln -snvf ..\/..\/..\/dir-project ..\/default.instance\/typo3conf\/ext\/chr_wallio"
+            "[ -L ..\/default.instance\/typo3conf\/ext\/chr_wallsio ] || ln -snvf ..\/..\/..\/dir-project ..\/default.instance\/typo3conf\/ext\/chr_wallsio"
         ]
     },
     "extra": {
