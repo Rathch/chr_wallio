@@ -5,7 +5,7 @@ if (!defined('TYPO3_MODE')) {
 }
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'CHR.chr_wallio',
+    'CHR.chr_wallsio',
     'wall',
     [
         'Wall' => 'show',

@@ -1,4 +1,4 @@
-.ce-wallio-modul {
+.ce-wallsio-modul {
     overflow: hidden;
     padding-top: 6.875rem;
     padding-bottom: 6.875rem;
@@ -6,34 +6,34 @@
     font-style: italic;
 }
 
-.ce-wallio-modul .row {
+.ce-wallsio-modul .row {
     margin-bottom: 3.125rem;
 }
 
-.ce-wallio-modul .row:last-child {
+.ce-wallsio-modul .row:last-child {
     margin-bottom: 0;
 }
 
 
 
-.ce-wallio-modul .btn {
+.ce-wallsio-modul .btn {
     display: block;
     max-width: 11.25rem;
     margin: 0 auto;
 }
 
-.ce-wallio-modul .wall_image-icon {
+.ce-wallsio-modul .wall_image-icon {
     max-width: 100%;
 }
 
-.ce-wallio-modul #wallio-gdpr-notice {
+.ce-wallsio-modul #wallsio-gdpr-notice {
     padding-bottom: 2rem;
 }
 
-.ce-wallio-modul #wallio-gdpr-notice .text a {
+.ce-wallsio-modul #wallsio-gdpr-notice .text a {
     text-decoration: underline;
 }
 
-.ce-wallio-modul #wallio-gdpr-notice .text a:hover {
+.ce-wallsio-modul #wallsio-gdpr-notice .text a:hover {
     text-decoration: none;
 }

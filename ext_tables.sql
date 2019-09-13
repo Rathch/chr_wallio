@@ -1,9 +1,9 @@
 
 
 #
-# Table structure for table 'tx_chrwallio_domain_model_wall'
+# Table structure for table 'tx_chrwallsio_domain_model_wall'
 #
-CREATE TABLE tx_chrwallio_domain_model_wall (
+CREATE TABLE tx_chrwallsio_domain_model_wall (
     headline varchar(255) DEFAULT '' NOT NULL,
 	notice text DEFAULT '' NOT NULL,
 	lable varchar(255) DEFAULT '' NOT NULL,

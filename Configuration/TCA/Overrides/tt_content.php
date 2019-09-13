@@ -1,11 +1,11 @@
 <?php
 
-$extKey = 'chr_wallio';
+$extKey = 'chr_wallsio';
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
     'CHR.' . $extKey,
     'wall',
     'SocialWall',
-    'EXT:chr_wallio/ext_icon.gif'
+    'EXT:chr_wallsio/ext_icon.gif'
 );
 $extensionName = \TYPO3\CMS\Core\Utility\GeneralUtility::underscoredToUpperCamelCase($extKey);
 $pluginSignature = strtolower($extensionName) . '_wall';

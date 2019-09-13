@@ -1,7 +1,7 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:wallio/Resources/Private/Language/locallang_db.xlf:tx_chrwallio_domain_model_wall',
+        'title' => 'LLL:EXT:wallsio/Resources/Private/Language/locallang_db.xlf:tx_chrwallsio_domain_model_wall',
         'label' => 'uid',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -17,7 +17,7 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => '',
-        'iconfile' => 'EXT:wallio/ext_icon.gif'
+        'iconfile' => 'EXT:wallsio/ext_icon.gif'
     ],
     'interface' => [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, content_about,',
@@ -98,8 +98,8 @@ return [
                 'items' => [
                     ['', 0],
                 ],
-                'foreign_table' => 'tx_chrwallio_domain_model_wall',
-                'foreign_table_where' => 'AND tx_chrwallio_domain_model_wall.pid=###CURRENT_PID### AND tx_chrwallio_domain_model_wall.sys_language_uid IN (-1,0)',
+                'foreign_table' => 'tx_chrwallsio_domain_model_wall',
+                'foreign_table_where' => 'AND tx_chrwallsio_domain_model_wall.pid=###CURRENT_PID### AND tx_chrwallsio_domain_model_wall.sys_language_uid IN (-1,0)',
             ],
         ],
         'l10n_diffsource' => [

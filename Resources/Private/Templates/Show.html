@@ -2,7 +2,7 @@
       xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
       data-namespace-typo3-fluid="true">
 
-    <div class="ce-wallio-modul">
+    <div class="ce-wallsio-modul">
         <div class="container">
             <div class="row justify-content-center">
                 <f:if condition="{data.wall_image}">
@@ -20,13 +20,13 @@
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-8 col-xl-6 text-center" id="wallio-gdpr-notice">
+                <div class="col-12 col-lg-8 col-xl-6 text-center" id="wallsio-gdpr-notice">
                     <div class="text">
                         <f:format.html parseFuncTSPath="lib.parseFunc">{data.wall_header_notice}</f:format.html>
                     </div>
-                    <a href="javascript:addWallio('{data.wall_url}')" class="btn btn-primary {data.wall_url}" role="button"><span class="decor"></span><span class="title">{data.wall_header_button_lable}</span></a>
+                    <a href="javascript:addWallsio('{data.wall_url}')" class="btn btn-primary {data.wall_url}" role="button"><span class="decor"></span><span class="title">{data.wall_header_button_lable}</span></a>
                 </div>
-                <div class="col-12" id="wallio-container"></div>
+                <div class="col-12" id="wallsio-container"></div>
             </div>
 
         </div>

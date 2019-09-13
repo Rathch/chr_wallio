@@ -1,32 +1,32 @@
-plugin.tx_chrwallio {
-    layoutRootPaths.0 = EXT:tx_chrwallio/Resources/Private/Layouts/
-    layoutRootPaths.10 = {$plugin.tx_chrwallio.view.layoutRootPath}
-    partialRootPaths.0 = EXT:tx_chrwallio/Resources/Private/Partials/
-    partialRootPaths.10 = {$plugin.tx_chrwallio.view.partialRootPath}
-    templateRootPaths.0 = EXT:tx_chrwallio/Resources/Private/Templates/
-    templateRootPaths.10 = {$plugin.tx_chrwallio.view.templateRootPath}
+plugin.tx_chrwallsio {
+    layoutRootPaths.0 = EXT:tx_chrwallsio/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_chrwallsio.view.layoutRootPath}
+    partialRootPaths.0 = EXT:tx_chrwallsio/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_chrwallsio.view.partialRootPath}
+    templateRootPaths.0 = EXT:tx_chrwallsio/Resources/Private/Templates/
+    templateRootPaths.10 = {$plugin.tx_chrwallsio.view.templateRootPath}
 
 }
 
 page.includeCSS {
-    wallio = EXT:chr_wallio/Resources/Public/css/main.css
+    wallsio = EXT:chr_wallsio/Resources/Public/css/main.css
 }
 
 page.includeJS {
-    wallio = EXT:chr_wallio/Resources/Public/js/main.js
-    wallio.type = application/x-javascript
+    wallsio = EXT:chr_wallsio/Resources/Public/js/main.js
+    wallsio.type = application/x-javascript
 
 }
 
 tt_content {
-    chrwallio_wall =< lib.contentElement
-    chrwallio_wall {
+    chrwallsio_wall =< lib.contentElement
+    chrwallsio_wall {
         dataProcessing {
             10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
             10 {
                 references.fieldName = assets
             }
-            20 = CHR\ChrWallio\DataProcessing\FlexFormProcessor
+            20 = CHR\ChrWallsio\DataProcessing\FlexFormProcessor
             20 {
                 fieldName = pi_flexform
             }
