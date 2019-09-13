@@ -104,23 +104,5 @@ class Wall extends AbstractEntity
     public function setImage(\TYPO3\CMS\Extbase\Domain\Model\FileReference $image) {
         $this->image = $image;
     }
-
-    /**
-     * @return ObjectStorage
-     */
-    public function getTopic(): ObjectStorage
-    {
-        return $this->topic;
-    }
-
-    /**
-     * @param ObjectStorage $topic
-     */
-    public function setTopic(ObjectStorage $topic): void
-    {
-        $this->topic = $topic;
-    }
-
-
-
+    
 }
