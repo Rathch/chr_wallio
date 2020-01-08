@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'chr_wallsio',
-    'description' => 'integrates wall.io',
+    'description' => 'Integrates walls.io',
     'category' => 'plugin',
     'author' => 'Christian Rath',
     'author_email' => 'christian.rath@publicispixelpark.de',
@@ -20,7 +20,7 @@ $EM_CONF[$_EXTKEY] = [
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '0.1.0',
+    'version' => '0.1.1',
     'constraints' => [
         'depends' => [
             'typo3' => '9.5.0-9.5.99',
