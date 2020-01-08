@@ -25,7 +25,7 @@
         "chr_wallsio": "self.version",
         "typo3-ter\/chr_wallsio": "self.version"
     },
-    "version": "0.1.0",
+    "version": "0.1.1",
     "scripts": {
         "post-autoload-dump": [
             "mkdir -p ..\/default.instance\/typo3conf\/ext\/",
